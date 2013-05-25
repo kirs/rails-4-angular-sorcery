@@ -1,2 +1,2 @@
-//= require ./angular-devise/index
+//= require ./angular-sorcery/index
 //= require_self

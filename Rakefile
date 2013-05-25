@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-AngularDevise4::Application.load_tasks
+AngularSorcery::Application.load_tasks

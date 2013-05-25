@@ -1,10 +1,12 @@
-angular.module('angularDevise.services').service('Session',[ '$cookieStore', 'UserSession', 'UserRegistration', function($cookieStore, UserSession, UserRegistration) {
+angular.module('angularDevise.services').service('Session',[ '$cookieStore', 'UserSession', 'UserRegistration', 'Settings', function($cookieStore, UserSession, UserRegistration, Settings) {
+
+  cookieKey = Settings.sessionCookieKey
 
   this.currentUser = function(){
-    return $cookieStore.get('_angular_devise_user');
+    return $cookieStore.get(cookieKey);
   };
   this.signedIn = function() {
-    return !!$cookieStore.get('_angular_devise_user');
+    return !!$cookieStore.get(cookieKey);
   };
   this.signedOut = function() {
     return !this.signedIn();
