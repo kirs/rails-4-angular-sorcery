@@ -1,7 +1,13 @@
 AngularDevise4::Application.routes.draw do
   get "home/index"
-  devise_for :users
+  # devise_for :users
   root :to => "home#index"
+
+  delete "sign_out" => "sessions#destroy", :as => "sign_out"
+  get "sign_in" => "sessions#new", :as => "sign_in"
+
+  resources :users, only: :create
+  resources :sessions, only: :create
 
   get "*page" => "home#index"
 

@@ -6,17 +6,15 @@ angular.module('angularDevise.resources').factory('UserSession', ['$http', funct
   };
 
   UserSession.prototype.$save = function() {
-    return $http.post('/users/sign_in', {
-      "user" : {
-        "email" : this.email,
-        "password" : this.password,
-        "remember_me" : this.remember_me ? 1 : 0
-      }
+    return $http.post('/sessions', {
+      "email" : this.email,
+      "password" : this.password,
+      "remember_me" : this.remember_me ? 1 : 0
     });
   };
 
   UserSession.prototype.$destroy = function() {
-    return $http.delete('/users/sign_out');
+    return $http.delete('/sign_out');
   };
 
   return UserSession;

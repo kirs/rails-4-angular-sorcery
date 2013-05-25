@@ -1,6 +1,6 @@
 //
 angular.module('angularDevise.controllers').controller('SessionsController', ['$scope', '$location', '$cookieStore', 'Session', function($scope, $location, $cookieStore, Session) {
-  
+
   $scope.session = Session.userSession;
 
   $scope.create = function() {
@@ -15,7 +15,10 @@ angular.module('angularDevise.controllers').controller('SessionsController', ['$
   };
 
   $scope.destroy = function() {
-    $scope.session.$destroy();
+    $scope.session.$destroy()
+    .success(function(data, status, headers, config) {
+      $cookieStore.remove('_angular_devise_user');
+    });
   };
 
 }]);

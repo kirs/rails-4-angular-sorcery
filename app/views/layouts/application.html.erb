@@ -17,12 +17,17 @@
           <div class="row">
             <div class="span12">
               <div class="navbar" bs-navbar>
-                <div class="navbar-inner">
+                <div class="navbar-inner" ng-controller="CommonController">
                   <a class="brand" href="/"><%= image_tag("brand/brand.png", :size => "32x32") %></a>
                   <ul class="nav">
                     <li data-match-route="/(:?home)"><a href="/home">Home</a></li>
-                    <li data-match-route="/register"><a href="/register">Sign up</a></li>
-                    <li data-match-route="/login"><a href="/login">Login</a></li>
+
+                    <li data-match-route="/register" ng-show="session.signedOut"><a href="/register">Sign up</a></li>
+                    <li data-match-route="/login" ng-show="session.signedOut"><a href="/login">Login</a></li>
+                  </ul>
+
+                  <ul class="nav pull-right">
+                    <li ng-click="destroy()" ng-show="session.signedIn"><a href="javascript:;">Logout</a></li>
                   </ul>
                 </div>
               </div>

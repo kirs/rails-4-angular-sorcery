@@ -2,7 +2,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc1'
-gem "devise", "~> 3.0.0.rc"
+# gem "devise", "~> 3.0.0.rc"
+gem "sorcery", github: "NoamB/sorcery"
+
 gem 'pg'
 gem "bootstrap-sass", "~> 2.3.1.2"
 
