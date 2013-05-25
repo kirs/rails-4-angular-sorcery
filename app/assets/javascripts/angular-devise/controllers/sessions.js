@@ -14,11 +14,4 @@ angular.module('angularDevise.controllers').controller('SessionsController', ['$
 
   };
 
-  $scope.destroy = function() {
-    $scope.session.$destroy()
-    .success(function(data, status, headers, config) {
-      $cookieStore.remove('_angular_devise_user');
-    });
-  };
-
 }]);

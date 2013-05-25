@@ -22,12 +22,12 @@
                   <ul class="nav">
                     <li data-match-route="/(:?home)"><a href="/home">Home</a></li>
 
-                    <li data-match-route="/register" ng-show="session.signedOut"><a href="/register">Sign up</a></li>
-                    <li data-match-route="/login" ng-show="session.signedOut"><a href="/login">Login</a></li>
+                    <li data-match-route="/register" ng-show="session.signedOut()"><a href="/register">Sign up</a></li>
+                    <li data-match-route="/login" ng-show="session.signedOut()"><a href="/login">Login</a></li>
                   </ul>
 
                   <ul class="nav pull-right">
-                    <li ng-click="destroy()" ng-show="session.signedIn"><a href="javascript:;">Logout</a></li>
+                    <li ng-click="destroy()" ng-show="session.signedIn()"><a href="javascript:;">Logout</a></li>
                   </ul>
                 </div>
               </div>
