@@ -1,0 +1,10 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: angular_devise_development
+  pool: 5
+  username: kir
+  password: "1"
+  min_messages: warning
+  template: template0
+  host: localhost
