@@ -6,8 +6,9 @@ angular.module('angularDevise.controllers').controller('CommonController', ['$sc
   $scope.destroy = function() {
     $scope.session.userSession.$destroy()
     .success(function(data, status, headers, config) {
-      console.log("success after destroying session")
       $cookieStore.remove('_angular_devise_user');
+
+      $location.path('/home');
     });
   };
 

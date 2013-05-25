@@ -9,6 +9,8 @@ angular.module('angularDevise.controllers').controller('SessionsController', ['$
       $scope.session.$save()
       .success(function(data, status, headers, config) {
         $cookieStore.put('_angular_devise_user', data);
+
+        $location.path('/home');
       });
     }
 
