@@ -1,10 +1,11 @@
 <h1>Users</h1>
 
-<ul>
-  <li ng-repeat="user in users">
+<dl class="dl-horizontal" ng-repeat="user in users">
+  <dt>
     {{user.email}}
-    <p ng-show="user.about.length > 0">
-      about: {{user.about}}
-    </p>
-  </li>
-</ul>
+  </dt>
+  <dd>
+    <span ng-show="user.about.length > 0">about: {{user.about}}</span>
+    <span class="label label-info" ng-show="currentUser.id == user.id">you</span>
+  </dd>
+</dl>
