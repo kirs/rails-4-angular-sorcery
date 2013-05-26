@@ -1,0 +1,16 @@
+<form class="form-horizontal" ng-controller="ProfileController" ng-submit="update()">
+  <legend>Profile</legend>
+
+  <div class="control-group">
+    <label class="control-label" for="inputAbout">About</label>
+    <div class="controls">
+      <input type="text" id="inputAbout" ng-model="user.about" placeholder="Type something about yourself…">
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="controls">
+      <button type="submit" class="btn">Submit</button>
+    </div>
+  </div>
+</form>

@@ -3,5 +3,8 @@
 <ul>
   <li ng-repeat="user in users">
     {{user.email}}
+    <p ng-show="user.about.length > 0">
+      about: {{user.about}}
+    </p>
   </li>
 </ul>

@@ -4,7 +4,9 @@ angular.module('angularDevise.controllers').controller('RegistrationsController'
   $scope.registration = Session.userRegistration;
 
   $scope.create = function() {
-    $scope.registration.$save();
+    $scope.registration.$save().success(function(data, status, headers, config) {
+      $location.path('/home');
+    });
   };
 
   $scope.destroy = function() {
