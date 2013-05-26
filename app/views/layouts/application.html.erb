@@ -2,7 +2,7 @@
 <html ng-app="angularDevise" ng-init='currentUser = <%= current_user.to_json.html_safe %>;'>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Angular Devise" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Angular + Sorcery example" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Angular Devise" %>">
     <link rel="shortcut icon" href="<%= asset_path("brand/favicon.ico") %>" type="image/x-icon" />
     <%= stylesheet_link_tag "libs", :media => "all" %>
