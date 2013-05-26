@@ -6,7 +6,7 @@ AngularSorcery::Application.routes.draw do
   delete "sign_out" => "sessions#destroy", :as => "sign_out"
   get "sign_in" => "sessions#new", :as => "sign_in"
 
-  resources :users, only: :create
+  resources :users, only: [:create, :index]
   resources :sessions, only: :create
 
   get "*page" => "home#index"

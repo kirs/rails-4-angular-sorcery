@@ -1,6 +1,4 @@
-//
 angular.module('angularDevise.controllers').controller('CommonController', ['$scope', '$location', '$cookieStore', 'Session', 'Settings', function($scope, $location, $cookieStore, Session, Settings) {
-
   $scope.session = Session;
 
   $scope.destroy = function() {
