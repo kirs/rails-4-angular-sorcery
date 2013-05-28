@@ -45,3 +45,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Choose your favorite template engine.
+gem 'haml_coffee_assets'
