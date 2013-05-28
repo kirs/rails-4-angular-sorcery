@@ -1,0 +1,51 @@
+%h1 Sign up
+%form{name: "myForm", "ng-submit" => "create()"}
+  .control-group
+    %label.control-label{for: "email"} Email
+    .controls
+      %input#email{name: "email", "ng-minlength" => "2", "ng-model" => "registration.email", placeholder: "Email", required: true, type: "email"}
+  .control-group
+    %label.control-label{for: "password"} Password
+    .controls
+      %input#password{name: "password", "ng-minlength" => "2", "ng-model" => "registration.password", "password-validate" => "", placeholder: "Password", required: true, type: "password"}
+  .control-group
+    %label.control-label{for: "password_confirmation"} Password
+    .controls
+      %input#password_confirmation{name: "password_confirmation", "ng-minlength" => "2", "ng-model" => "registration.password_confirmation", "password-validate" => "", placeholder: "Password", required: true, type: "password"}
+  .control-group
+    .controls
+      %button.btn{type: "submit"} Sign up
+  %hr
+  %tt {{registration}}
+  %br
+  %hr
+  %tt
+    myForm.email.$valid = {{myForm.email.$valid}}
+  %br
+  %tt
+    myForm.email.$error = {{myForm.email.$error}}
+  %br
+  %tt
+    myForm.password.$valid = {{myForm.password.$valid}}
+  %br
+  %tt
+    myForm.password.$error = {{myForm.password.$error}}
+  %br
+  %tt
+    myForm.password_confirmation.$valid = {{myForm.password_confirmation.$valid}}
+  %br
+  %tt
+    myForm.password_confirmation.$error = {{myForm.password_confirmation.$error}}
+  %br
+  %tt
+    myForm.$valid =  {{myForm.$valid}}
+  %br
+  %tt
+    myForm.$error.required = {{!!myForm.$error.required}}
+  %br
+  %tt
+    myForm.$error.minlength = {{!!myForm.$error.minlength}}
+  %br
+  %tt
+    myForm.$error.maxlength = {{!!myForm.$error.maxlength}}
+  %br

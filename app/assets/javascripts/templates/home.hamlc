@@ -1,0 +1,6 @@
+%h1 Home
+Signed in:
+%span{"ng-bind" => "session_resource.signedIn()"}
+%br
+SignedOut:
+%span{"ng-bind" => "session_resource.signedOut()"}
