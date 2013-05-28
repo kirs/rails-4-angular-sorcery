@@ -1,0 +1,9 @@
+%form.form-horizontal{"ng-controller" => "ProfileController", "ng-submit" => "update()"}
+  %legend Profile
+  .control-group
+    %label.control-label{for: "inputAbout"} About
+    .controls
+      %input#inputAbout{"ng-model" => "user.about", placeholder: "Type something about yourself…", type: "text"}
+  .control-group
+    .controls
+      %button.btn{type: "submit"} Submit

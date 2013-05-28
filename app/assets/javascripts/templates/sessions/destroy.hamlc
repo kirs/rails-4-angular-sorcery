@@ -1,0 +1,1 @@
+%a.btn{href: "javascript:;", "ng-click" => "destroy()"} Logout

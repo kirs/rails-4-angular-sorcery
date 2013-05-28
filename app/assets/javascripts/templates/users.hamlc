@@ -1,0 +1,7 @@
+%h1 Users
+%dl.dl-horizontal{"ng-repeat" => "user in users"}
+  %dt
+    {{user.email}}
+  %dd
+    %span{"ng-show" => "user.about.length > 0"} about: {{user.about}}
+    %span.label.label-info{"ng-show" => "currentUser.id == user.id"} you

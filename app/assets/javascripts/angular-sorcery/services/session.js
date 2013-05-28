@@ -4,7 +4,9 @@ angular.module('angularDevise.services').service('Session',[ '$cookieStore', 'Us
 
   this.getCurrentUser = function() {
     var id = $cookieStore.get(cookieKey);
-    return User.get({id: id});
+    if (id) {
+      return User.get({id: id});
+    }
   };
   this.signedIn = function() {
     return !!$cookieStore.get(cookieKey);
