@@ -1,4 +1,4 @@
-angular.module('angularDevise.controllers').controller('ProfileController', ['$scope', '$location', 'User', 'Session', function($scope, $location, User, Session) {
+angular.module('angularSorcery.controllers').controller('ProfileController', ['$scope', '$location', 'User', 'Session', function($scope, $location, User, Session) {
 
   $scope.user = Session.getCurrentUser();
 

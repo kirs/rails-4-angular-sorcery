@@ -1,4 +1,4 @@
-angular.module('angularDevise.resources').factory('UserRegistration', ['$http', function($http) {
+angular.module('angularSorcery.resources').factory('UserRegistration', ['$http', function($http) {
 
   var UserRegistration = function(options) {
     angular.extend(this, options);
