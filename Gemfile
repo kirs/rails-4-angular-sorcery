@@ -5,7 +5,7 @@ gem 'rails', '4.0.0.rc1'
 # gem "devise", "~> 3.0.0.rc"
 gem "sorcery", github: "NoamB/sorcery"
 
-gem 'pg'
+gem 'sqlite3'
 gem "bootstrap-sass", "~> 2.3.1.2"
 
 # Use SCSS for stylesheets
@@ -48,3 +48,4 @@ end
 
 # Choose your favorite template engine.
 gem 'haml_coffee_assets'
+gem 'ng-rails-csrf'

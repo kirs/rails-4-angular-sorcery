@@ -2,3 +2,4 @@
 //= require hamlcoffee
 //= require_tree ./templates
 //= require_self
+//= require ng-rails-csrf
