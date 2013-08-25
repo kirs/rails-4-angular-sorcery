@@ -1,0 +1,19 @@
+{
+  "framework": "jasmine",
+  "launch_in_dev": [ "Chromium" ],
+
+  "src_files": [
+    "app/assets/javascripts/*.js",
+    "spec/javascripts/unit/**/*.js"
+  ],
+
+  "serve_files": [
+    "public/assets/*.js",
+    "spec/javascripts/lib/angular-mocks.js",
+    "spec/javascripts/unit/**/*.js"
+  ],
+
+	"before_tests": "rake assets:precompile RAILS_ENV=development",
+	"after_tests": "rm -rf public/assets/"
+}
+

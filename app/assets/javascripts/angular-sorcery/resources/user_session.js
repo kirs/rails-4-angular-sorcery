@@ -1,4 +1,4 @@
-angular.module('angularDevise.resources').factory('UserSession', ['$http', '$cookieStore', 'Settings', function($http, $cookieStore, Settings) {
+angular.module('angularSorcery.resources').factory('UserSession', ['$http', '$cookieStore', 'Settings', function($http, $cookieStore, Settings) {
 
   var cookieKey = Settings.sessionCookieKey
 

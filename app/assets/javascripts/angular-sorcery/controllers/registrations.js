@@ -1,5 +1,5 @@
 //
-angular.module('angularDevise.controllers').controller('RegistrationsController', ['$scope', '$location', 'Session', function($scope, $location, Session) {
+angular.module('angularSorcery.controllers').controller('RegistrationsController', ['$scope', '$location', 'Session', function($scope, $location, Session) {
 
   $scope.registration = Session.userRegistration;
 

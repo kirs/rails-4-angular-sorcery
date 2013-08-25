@@ -1,4 +1,4 @@
-angular.module('angularDevise.controllers').controller('CommonController', ['$scope', '$location', 'Session', function($scope, $location, Session) {
+angular.module('angularSorcery.controllers').controller('CommonController', ['$scope', '$location', 'Session', function($scope, $location, Session) {
   $scope.session = Session;
 
   $scope.destroy = function() {

@@ -1,4 +1,4 @@
-angular.module('angularDevise.controllers').controller('SessionsController', ['$scope', '$location', '$cookieStore', 'Session', 'Settings', function($scope, $location, $cookieStore, Session, Settings) {
+angular.module('angularSorcery.controllers').controller('SessionsController', ['$scope', '$location', '$cookieStore', 'Session', 'Settings', function($scope, $location, $cookieStore, Session, Settings) {
 
   $scope.session = Session.userSession;
 

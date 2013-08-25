@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="angularDevise" ng-init='currentUser = <%= current_user.to_json.html_safe %>;'>
+<html ng-app="angularSorcery" ng-init='currentUser = <%= current_user.to_json.html_safe %>;'>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Angular + Sorcery example" %></title>
@@ -39,7 +39,6 @@
         </div>
       </div>
     </div>
-    <%= javascript_include_tag "libs" %>
     <%= javascript_include_tag "application" %>
   </body>
 </html>

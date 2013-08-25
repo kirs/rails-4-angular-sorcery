@@ -1,4 +1,4 @@
-angular.module('angularDevise.services').service('Session',[ '$cookieStore', 'UserSession', 'UserRegistration', 'Settings', 'User', function($cookieStore, UserSession, UserRegistration, Settings, User) {
+angular.module('angularSorcery.services').service('Session',[ '$cookieStore', 'UserSession', 'UserRegistration', 'Settings', 'User', function($cookieStore, UserSession, UserRegistration, Settings, User) {
 
   cookieKey = Settings.sessionCookieKey
 
